@@ -15,6 +15,7 @@ web-build/
 *.swp
 .vscode/
 .idea/
+.cursor/
 
 # Env
 .env

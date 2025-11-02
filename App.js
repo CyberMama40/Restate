@@ -3,6 +3,7 @@ import * as React from 'react';
 import { Text, View, Pressable, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { Review } from './src/review/Review';
 
 function HomeScreen({ navigation }) {
   return (
@@ -55,6 +56,7 @@ export default function App() {
         <Tab.Screen name="Главная" component={HomeScreen} options={{ tabBarIcon: () => <Text>🏠</Text> }} />
         <Tab.Screen name="Каталог" component={CatalogScreen} options={{ tabBarIcon: () => <Text>📋</Text> }} />
         <Tab.Screen name="Избранное" component={FavoritesScreen} options={{ tabBarIcon: () => <Text>⭐</Text> }} />
+        <Tab.Screen name="Отзывы" component={Review} options={{ tabBarIcon: () => <Text>💬</Text> }} />
       </Tab.Navigator>
     </NavigationContainer>
   );
